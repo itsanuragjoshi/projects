@@ -1,0 +1,83 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: 1px solid #ccc;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 1rem;
+    margin: 1rem 1rem 0;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+}
+
+#displayLog {
+    min-height: 2rem;
+    overflow-y: auto;
+    word-wrap: break-word;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+#displayTotal {
+    min-height: 2.5rem;
+    flex: 1;
+    font-size: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.keys {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: .2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    gap: .2rem;
+}
+
+.key {
+    flex: 1;
+    padding: .5rem;
+    font-size: 1.2rem;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.key:hover {
+    background-color: #ccc;
+}
+
+.key:active,
+.key.active {
+    background-color: darkblue;
+    color: white;
+}
+
+.special {
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.special:nth-child(1) {
+    flex: 25%;
+}
+
+.special:nth-child(2) {
+    flex: 25%;
+}
+
+.special:nth-child(3) {
+    flex: 50%;
+}
