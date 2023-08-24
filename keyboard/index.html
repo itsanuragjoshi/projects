@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Virtual Keyboard [HTML/CSS/JS] by Anurag Joshi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="textContainer" class="textContainer" contenteditable="true"></div>
+
+    <div class="keyboard">
+        <div class="row">
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">~</div>
+                <div class="bottom-center">`</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">!</div>
+                <div class="bottom-center">1</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">@</div>
+                <div class="bottom-center">2</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">#</div>
+                <div class="bottom-center">3</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">$</div>
+                <div class="bottom-center">4</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">%</div>
+                <div class="bottom-center">5</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">^</div>
+                <div class="bottom-center">6</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">&</div>
+                <div class="bottom-center">7</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">*</div>
+                <div class="bottom-center">8</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">(</div>
+                <div class="bottom-center">9</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">)</div>
+                <div class="bottom-center">0</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">_</div>
+                <div class="bottom-center">-</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">+</div>
+                <div class="bottom-center">=</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="key" data-type="alphabet">q</div>
+            <div class="key" data-type="alphabet">w</div>
+            <div class="key" data-type="alphabet">e</div>
+            <div class="key" data-type="alphabet">r</div>
+            <div class="key" data-type="alphabet">t</div>
+            <div class="key" data-type="alphabet">y</div>
+            <div class="key" data-type="alphabet">u</div>
+            <div class="key" data-type="alphabet">i</div>
+            <div class="key" data-type="alphabet">o</div>
+            <div class="key" data-type="alphabet">p</div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">{</div>
+                <div class="bottom-center">}</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">[</div>
+                <div class="bottom-center">]</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">|</div>
+                <div class="bottom-center">\</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="key" data-type="alphabet">a</div>
+            <div class="key" data-type="alphabet">s</div>
+            <div class="key" data-type="alphabet">d</div>
+            <div class="key" data-type="alphabet">f</div>
+            <div class="key" data-type="alphabet">g</div>
+            <div class="key" data-type="alphabet">h</div>
+            <div class="key" data-type="alphabet">j</div>
+            <div class="key" data-type="alphabet">k</div>
+            <div class="key" data-type="alphabet">l</div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">:</div>
+                <div class="bottom-center">;</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">"</div>
+                <div class="bottom-center">'</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="key capslock special-key">Caps Lock</div>
+            <div class="key" data-type="alphabet">z</div>
+            <div class="key" data-type="alphabet">x</div>
+            <div class="key" data-type="alphabet">c</div>
+            <div class="key" data-type="alphabet">v</div>
+            <div class="key" data-type="alphabet">b</div>
+            <div class="key" data-type="alphabet">n</div>
+            <div class="key" data-type="alphabet">m</div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">&lt;</div>
+                <div class="bottom-center">,</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">&gt;</div>
+                <div class="bottom-center">.</div>
+            </div>
+            <div class="key" data-type="flipkeys">
+                <div class="top-center small">?</div>
+                <div class="bottom-center">/</div>
+            </div>
+            <div class="key special-key" data-type="delete">Delete</div>
+        </div>
+        <div class="row">
+            <div class="key shift special-key">Shift</div>
+            <div class="key space special-key" data-type="space">Space</div>
+            <div class="key enter special-key">Enter</div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
